@@ -3,9 +3,9 @@
 
 ---
 
-##🔗 How to Link Node.js App to USSD
+## 🔗 How to Link Node.js App to USSD
 
-###1. Get Access to a USSD Code
+### 1. Get Access to a USSD Code
 
 A USSD code looks like *123# or *456*9#.
 
@@ -20,7 +20,7 @@ They can give you a dedicated short code (*123#) or a shared code (e.g., *123*45
 
 ---
 
-###2. Connect to the USSD Gateway
+### 2. Connect to the USSD Gateway
 
 The MNO has a USSD Gateway that routes customer dial requests (*123#) to your backend app.
 Usually, they forward requests via:
@@ -40,7 +40,7 @@ The operator will configure their gateway to forward USSD sessions to that URL.
 
 ---
 
-###3. Handle USSD Requests
+### 3. Handle USSD Requests
 
 The USSD gateway sends requests like this (format depends on the operator):
 
@@ -63,7 +63,7 @@ Your backend (the Node.js wallet you built) processes this text and returns a me
 
 ---
 
-4. Respond Back to User
+### 4. Respond Back to User
 
 Response format is usually plain text with CON or END:
 
@@ -86,7 +86,7 @@ END Your balance is 1,200 KES
 
 ---
 
-5. Deployment
+### 5. Deployment
 
 Host your Node.js app on a server with public HTTPS (e.g., AWS, Heroku, Render, DigitalOcean).
 
@@ -115,6 +115,4 @@ They’ll bind the short code (*123#) to that URL.
 
 
 ---
-
-Do you want me to extend your Node.js code so it can handle actual USSD requests (menu navigation with CON/END), so once your company gives you the short code, you can plug it in directly?
 
