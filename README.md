@@ -1,13 +1,11 @@
 # USSD-node-js
 
-Good question 👍 — right now the code in your wallet app is just a backend API. To make it actually work as a USSD service, you need to connect it to your mobile network operator’s USSD gateway. Let me break it down clearly:
-
 
 ---
 
-🔗 How to Link Node.js App to USSD
+##🔗 How to Link Node.js App to USSD
 
-1. Get Access to a USSD Code
+###1. Get Access to a USSD Code
 
 A USSD code looks like *123# or *456*9#.
 
@@ -22,7 +20,7 @@ They can give you a dedicated short code (*123#) or a shared code (e.g., *123*45
 
 ---
 
-2. Connect to the USSD Gateway
+###2. Connect to the USSD Gateway
 
 The MNO has a USSD Gateway that routes customer dial requests (*123#) to your backend app.
 Usually, they forward requests via:
@@ -42,7 +40,7 @@ The operator will configure their gateway to forward USSD sessions to that URL.
 
 ---
 
-3. Handle USSD Requests
+###3. Handle USSD Requests
 
 The USSD gateway sends requests like this (format depends on the operator):
 
